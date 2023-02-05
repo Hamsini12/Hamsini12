@@ -1,0 +1,39 @@
+<html>
+<style>
+body {
+  background-image: url('https://images.pexels.com/photos/131683/pexels-photo-131683.jpeg?cs=srgb&dl=pexels-fwstudio-131683.jpg&fm=jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;text-align:center;
+  color:white;font-size:30px;
+}
+</style>
+<body>
+<br><br><br><br><h2><i>PLAYER1</i></h2>
+<i>Enter your guess:</i><input style="border-color:none" type="number"/id="bhs">
+<h2><i>PLAYER2</i></h2>
+<i>Enter your guess:</i><input style="border-color:none" type="number"/id="bhs">
+<br><br><br><button style="border-color:none" type="button" onclick="myfunction()"><i style="font-size:20px">Submit Guess</i></button>
+<script>
+function myfunction()
+{
+var y=Math.floor(Math.random()* 10 + 1);
+var x,z;
+x=document.getElementById("bhs").value;
+z=document.getElementById("bhs").value;
+if(x!=y && z!=y)
+{
+alert("OOPS!TRY AGAIN");
+}
+elseif(x==y)
+{
+alert("PLAYER1 CONGRATULATIONS!,you win the game");
+}
+elseif(z==y)
+{
+alert("PLAYER2 CONGRATULATIONS!,you win the game");
+}
+}
+</script>
+</body>
+</html>

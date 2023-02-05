@@ -1,0 +1,92 @@
+<html>
+<head>
+<script type="text/javascript">
+
+
+function validateemail()  
+{  
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+}    
+ 
+</script>  
+<style>
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+  background-image: url('https://wireless.mcmaster.ca/app/uploads/2019/12/Rapid-Release-Duotone-720x405.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 105% 105%;
+}
+    .f1{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-top:140px;
+            margin-left:550px;
+            margin-right: 550px;
+            border:2px solid black;
+            border-radius:10px;
+            background-color:white;
+        }
+     .g{
+        font-size: larger;
+        font-weight: 600;
+        justify-content: center;
+
+     }   
+     input{
+        border-radius: 5px;
+        height: 25px;
+        margin-top:15px;
+     }
+     .i{
+        display:inline-block;
+        margin-top:30px;
+     }
+     .button{
+        margin:50px;
+        margin:30px;
+        border:none;
+        background-color:rgb(138, 28, 105);
+        padding:15px 32px;
+        color:lightblue;
+        text-align:center;
+        text-decoration:none;
+        display:inline-block;
+        font-size:16px;
+        margin:4px 2px;
+        cursor:pointer;
+        margin-left:50px;
+        border-radius:4px;
+        height:fit-content;
+        margin-bottom: 15px;
+      }
+
+      button a{
+        text-decoration:none;
+        color:black;
+      }
+     
+     a{
+      text-decoration: none;
+     }
+</style>
+<body>
+<div class="f1">
+<form name="f1"   onsubmit="return validateemail();" id="myform" action="file:///C:/Users/Lenovo/OneDrive/Desktop/HAMSINI%20PROJECT/mainpage.html"> 
+    <h1><p class="g">LOGIN</p> </h1>
+<input type="email" placeholder="email" required  size="30" ><br><br>
+<input type="password" name="password" placeholder="Password" size="30" required><br><br>
+<input type="submit" class="button" onClick="validata('myform')"  value="submit">
+</div>
+</form>
+</div>
+</body>
+</html>
